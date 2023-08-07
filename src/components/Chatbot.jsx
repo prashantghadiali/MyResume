@@ -1,6 +1,7 @@
 import React from 'react'
 import { ThemeProvider } from 'styled-components';
 import ChatBot from 'react-simple-chatbot';
+import chatbotimg from '../images/chatbot.png';
 
 const call = "+91 966-299-8555";
 const email = 'er.prashantghadiali@gmail.com';
@@ -128,9 +129,9 @@ const steps = [
            <>
            <center>
                 <button className="btn btn-info btn-lg mt-2" onClick={onButtonClick}>Download his PDF Resume</button>
-                <button className="btn btn-link btn-lg mt-2"><a  href='https://www.linkedin.com/in/prashant-ghadiali-167025166' style={{textDecoration: "none"}} >LinkedIn profile</a></button>
-                <button className="btn btn-link btn-lg mt-2"><a  href='https://wa.me/+919662998555?' style={{textDecoration: "none"}} >Whatsapp</a></button>
-                <button className="btn btn-link btn-lg mt-2"><a  href='https://github.com/prashantghadiali' style={{textDecoration: "none"}} >Git</a></button>
+                <button className="btn btn-link btn-lg mt-2"><a  href='https://www.linkedin.com/in/prashant-ghadiali-167025166' target="_blank" style={{textDecoration: "none" }} >LinkedIn profile</a></button>
+                <button className="btn btn-link btn-lg mt-2"><a  href='https://wa.me/+919662998555?' target="_blank" style={{textDecoration: "none"}} >Whatsapp</a></button>
+                <button className="btn btn-link btn-lg mt-2"><a  href='https://github.com/prashantghadiali' target="_blank" style={{textDecoration: "none"}} >Git</a></button>
             </center>
            </>
     
@@ -139,14 +140,32 @@ const steps = [
     },
   ];
 
+let trigger = document.getElementsByClassName("trigger")[0];
+let triggerd = document.getElementsByClassName("triggerd")[0];
+
+  function chatbotClicked(){
+    trigger.style.display = "none";
+    triggerd.style.display = "block";
+  }
+
+  function chatbotClickedHeader(){
+    trigger.style.display = "block";
+    triggerd.style.display = "none";
+  }
+
 
 
 const Chatbot = () => {
   return (
     <div>
-        <ThemeProvider theme={theme}>
-            <ChatBot steps={steps} />
-        </ThemeProvider>
+        <div onClick={chatbotClicked} style={{display:'block'}} >
+          <img className="trigger" src={chatbotimg} height={80} alt="" srcset="" />
+        </div>
+        <div onClick={chatbotClickedHeader} className="triggerd" style={{display:'none'}}>
+          <ThemeProvider theme={theme}>
+              <ChatBot steps={steps} className="chatbot" />
+          </ThemeProvider>
+        </div>
     </div>
   )
 }

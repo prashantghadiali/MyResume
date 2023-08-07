@@ -18,8 +18,8 @@ const Experience = () => {
                 <div className="timeline-box ">
                     <div className="timeline-container">
                         <div className="timeline-logo">
-                            <svg class="img-fluid" xmlns="http://www.w3.org/2000/svg" width="280" height="79" viewBox="0 0 300 79">
-                                <text id="Gopanear." transform="translate(0 64)" fill="#4f8df5" font-size="59" font-family="'Nunito', sans-serif" font-weight="700"><tspan x="0" y="0">Gopanear.<tspan font-size="19" y="-25" x="270" transform="translate(0 20)" font-family="'Nunito', sans-serif" font-weight="800">®</tspan></tspan></text>
+                            <svg className="img-fluid" xmlns="http://www.w3.org/2000/svg" width="280" height="79" viewBox="0 0 300 79">
+                                <text id="Gopanear." transform="translate(0 64)" fill="#4f8df5" fontSize="59" fontFamily="'Nunito', sans-serif" fontWeight="700"><tspan x="0" y="0">Gopanear.<tspan fontSize="19" y="-25" x="270" transform="translate(0 20)" fontFamily="'Nunito', sans-serif" fontWeight="800">®</tspan></tspan></text>
                             </svg>
                         </div>
                         <h3 className="experience-designation  m0 m-blue"> Jr. Software Engineer</h3>

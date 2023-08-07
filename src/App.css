@@ -399,10 +399,10 @@ section:nth-child(2n + 1) {
     padding-bottom: 40px;
 }
 
-#contact h1,
+/* #contact h1,
 #contact h1 span {
     color: white;
-}
+} */
 
 #contact-form {
     margin-left: 20%;
@@ -410,6 +410,11 @@ section:nth-child(2n + 1) {
 
 #contact-container {
     display: flex;
+    background-color: #1b1f90;
+    z-index: 1;
+    margin: 0rem 5rem;
+    padding: 2rem;
+    border-radius: 9vh;
 }
 
 #my-details-container {
@@ -471,11 +476,11 @@ textarea {
 #contact-form button[type="submit"] {
     background: transparent;
     font-size: 0.95rem;
-    border: 2px solid white;
+    border: 2px solid rgb(255, 255, 255);
     margin-top: 5%;
     margin-left: 35%;
     border-radius: 2px;
-    color: white;
+    color: rgb(255, 255, 255);
     font-family: sans-serif;
     font-weight: 700;
     letter-spacing: 0.046875em;
@@ -584,6 +589,20 @@ button:focus {
 .fifty-percent {
     height: inherit;
     width: 65%;
+}
+
+.trigger{
+    position: fixed;
+    right:75px;
+    bottom: 35px;
+    z-index: 5; 
+}
+
+.chatbot{
+    position: fixed;
+    right:20px;
+    bottom: 5px;
+    z-index: 5;
 }
 
 

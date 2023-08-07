@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import '../src/components/script'
 import Chatbot from './components/Chatbot';
 import Header from './components/Header';
 import About from './components/About';
@@ -24,7 +25,7 @@ function App() {
           <Portfolio />
           <Contact/>
         </main>
-        {/* <Chatbot /> */}
+        <Chatbot />
         
       </>
     );

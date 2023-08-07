@@ -70,7 +70,7 @@ const Header = () => {
                             default: "bounce",
                         },
                         random: false,
-                        speed: 6,
+                        speed: 3,
                         straight: false,
                     },
                     number: {
@@ -161,28 +161,28 @@ const Header = () => {
             <div>
                 <ul className="no-list-style horizontal-list text-center social-icons">
                     <li>
-                        <a href="#">
+                        <a href="https://www.linkedin.com/in/prashant-ghadiali-167025166/" target='_blank'>
                             <i className="fab fa-linkedin-in"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            <i className="fab fa-stack-overflow"></i>
+                        <a href="https://github.com/prashantghadiali" target='_blank'>
+                            <i className="fab fa-github"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            <i className="fab fa-google-plus-g"></i>
+                        <a href="https://wa.me/+919662998555?" target='_blank'>
+                            <i className="fab fa-whatsapp"></i>
                         </a>
                     </li>
-                    <li>
+                    {/* <li>
                         <a href="#">
                             <i className="fab fa-facebook-f"></i>
                         </a>
-                    </li>
+                    </li> */}
                     <li>
-                        <a href="#">
-                            <i className="fab fa-quora"></i>
+                        <a href="https://www.youtube.com/channel/UCAPcU3UqwCM9Fo2n8qGlWtQ" target='_blank'>
+                            <i className="fab fa-youtube"></i>
                         </a>
                     </li>
                 </ul>

@@ -1,23 +1,33 @@
 import React from 'react'
+import { Button } from 'semantic-ui-react'
+import emailjs from '@emailjs/browser'
 
 const Contact = () => {
+    const sendEmail = (e) =>{
+        e.preventDefault();
+        console.log(process.env.REACT_APP_API_KEY)
+        console.log(process.env.REACT_APP_SERVICE_ID)
+        emailjs.sendForm('service_jg2t5ba','template_s8tuupo', e.target, 'r9JUSpE2a_MadvM1k')
+        // emailjs.sendForm(process.env.REACT_APP_SERVICE_ID,process.env.REACT_APP_TEMPLATE_ID, e.target, 'process.env.REACT_APP_API_KEY')
+    }
+
   return (
     <div>
         <section id="contact">
-            <h1 class="section-heading mb50px">
+            <h1 className="section-heading mb50px">
                 <span>
-                    <i class="far fa-address-card"></i>
+                    <i className="far fa-address-card"></i>
                 </span>
                 <span> Contact </span>
             </h1>
             <div id="contact-container">
 
                 <div id="contact-form-container">
-                    <form id="contact-form"  action="/php1/28_form.php" method= "post">
-                        <input id="input-name" name="name" type="text" required placeholder="Your Name" />
-                        <input id="input-email" name="email" type="text" required placeholder="Your Email"/>
-                        <textarea id="input-messege" name="messege" rows="2" cols={40} placeholder="Message"></textarea>
-                        <button class="sub-btn" type="submit">SEND MESSAGE</button>
+                    <form id="contact-form" onSubmit={sendEmail}>
+                        <input id="input-name" name="user_name" type="text" required placeholder="Your Name" />
+                        <input id="input-email" name="user_email" type="email" required placeholder="Your Email"/>
+                        <textarea id="input-messege" name="message" rows="2" cols={40} placeholder="Message"></textarea>
+                        <Button className="sub-btn" type="submit">SEND MESSAGE</Button>
                     </form>
                 </div>
                 <div id="my-details-container">
@@ -26,52 +36,56 @@ const Contact = () => {
                     <p> This is contact form to contact me. please feel free to contact me. I am full-stack website developer in python. I have also familiar with Flask and Chatbot-development. </p>
 
                     <h3> My Address </h3>
-                    <div class="my-details-info-container">
-                        <i class="fas fa-map-marker-alt"></i>
+                    <div className="my-details-info-container">
+                        <i className="fas fa-map-marker-alt"></i>
                         <span>Bilimora, Gujarat, India</span>
                     </div>
-                    <div class="my-details-info-container">
-                        <i class="fas fa-mobile-alt"></i>
+                    <div className="my-details-info-container">
+                        <i className="fas fa-mobile-alt"></i>
                         <span>9662998555</span>
                     </div>
-                    <div class="my-details-info-container">
-                        <i class="far fa-envelope"></i>
+                    <div className="my-details-info-container">
+                        <i className="far fa-envelope"></i>
                         <span>admin@prashantghadiali.com</span>
+                    </div>
+                    <div className="my-details-info-container">
+                        <i className="far fa-envelope"></i>
+                        <span>er.prashantghadiali@gmail.com (for fast response)</span>
                     </div>
                 </div>
             </div>
 
-            <div class="text-center social-icons">
+            <div className="text-center social-icons">
 
-                <ul class="no-list-style horizontal-list">
+                <ul className="no-list-style horizontal-list">
 
                     <li>
                         <a href="https://www.linkedin.com/in/manisha-khattar-b5663641/">
-                            <i class="fab fa-linkedin-in"></i>
+                            <i className="fab fa-linkedin-in"></i>
                         </a>
                     </li>
 
                     <li>
                         <a href="https://stackoverflow.com/users/5608414/manisha?tab=profile" target="_blank">
-                            <i class="fab fa-stack-overflow"></i>
+                            <i className="fab fa-stack-overflow"></i>
                         </a>
                     </li>
 
                     <li>
                         <a href="https://plus.google.com/u/0/103030702784925512939" target="_blank">
-                            <i class="fab fa-google-plus-g"></i>
+                            <i className="fab fa-google-plus-g"></i>
                         </a>
                     </li>
 
                     <li>
                         <a href="https://www.facebook.com/manishakhattar54">
-                            <i class="fab fa-facebook-f"></i>
+                            <i className="fab fa-facebook-f"></i>
                         </a>
                     </li>
 
                     <li>
                         <a href="https://www.quora.com/profile/Manisha-Khattar" target="_blank">
-                            <i class="fab fa-quora"></i>
+                            <i className="fab fa-quora"></i>
                         </a>
                     </li>
                 </ul>
