@@ -11,7 +11,11 @@ const About = () => {
 
             <div id="about-para">
                 <p>
-                    My name is Prahant Ghadiali. I completed my M.tech in Automobile Technolgy with 1st rank First Class with distinction. I worked as Head Research and Development Department in Drone Robotics. I recruited technical staff for IT sector. I also train students in Robotics. I am currently working in Gopanear and on Notice Period beacuse of daily 65km of Travelling by Train. I am seeking opportunity for Remote job or Good salary so I can relocate.
+                I'm Prashant Ghadiali. I hold a Master's degree in Automobile Technology, where I secured the first rank with distinction. My professional journey includes serving as the Head of the Research and Development Department at Drone Robotics, where I not only led projects but also played a pivotal role in recruiting technical talent for the IT sector.
+                <br /><br />
+                One of my passions lies in education, and I've had the privilege of training students in the field of Robotics. Additionally, I bring with me six months of hands-on experience in Full-Stack Development at Gopanear.
+                <br /><br />
+                I am an immediate joiner, and my first choices for professional endeavors are Pune and Bengaluru. I look forward to bringing my expertise and enthusiasm to a dynamic team.
                 </p>
             </div>
         </section>

@@ -1,12 +1,14 @@
 import React from 'react'
 import { Button } from 'semantic-ui-react'
 import emailjs from '@emailjs/browser'
+import { toast } from 'react-toastify'
 
 const Contact = () => {
     const sendEmail = (e) =>{
         e.preventDefault();
-        console.log(process.env.REACT_APP_API_KEY)
-        console.log(process.env.REACT_APP_SERVICE_ID)
+        toast.success("Your Response is Sent")
+        // console.log(process.env.REACT_APP_API_KEY)
+        // console.log(process.env.REACT_APP_SERVICE_ID)
         emailjs.sendForm('service_jg2t5ba','template_s8tuupo', e.target, 'r9JUSpE2a_MadvM1k')
         // emailjs.sendForm(process.env.REACT_APP_SERVICE_ID,process.env.REACT_APP_TEMPLATE_ID, e.target, 'process.env.REACT_APP_API_KEY')
     }
@@ -33,7 +35,7 @@ const Contact = () => {
                 <div id="my-details-container">
 
                     <h3> Get In touch </h3>
-                    <p> This is contact form to contact me. please feel free to contact me. I am full-stack website developer in python. I have also familiar with Flask and Chatbot-development. </p>
+                    <p> This is contact form to contact me. please feel free to contact me. I am full-stack website developer in Django and MERN. I have also familiar with Laravel </p>
 
                     <h3> My Address </h3>
                     <div className="my-details-info-container">
@@ -42,7 +44,7 @@ const Contact = () => {
                     </div>
                     <div className="my-details-info-container">
                         <i className="fas fa-mobile-alt"></i>
-                        <span>9662998555</span>
+                        <span>7567978505</span>
                     </div>
                     <div className="my-details-info-container">
                         <i className="far fa-envelope"></i>

@@ -24,16 +24,16 @@ const Experience = () => {
                         </div>
                         <h3 className="experience-designation  m0 m-blue"> Jr. Software Engineer</h3>
                         <h4 className="experience-company-name"> Gopanear </h4>
-                        <h5 className="experience-duration m0"> 06 March, 2022 - Presently Working </h5>
+                        <h5 className="experience-duration m0"> 06 March, 2023 - 31 August, 2023 </h5>
 
-                        <p className="experience-description text-justify">My Duty is to Work as a Full Stack Developer. I learnt Django and React. I also make one Online Video Streaming Website Like Youtube in Django. But I am More Interested about React Library because of it's component Based Architecture and good flexibilty for UI Contents.</p>
+                        <p className="experience-description text-justify">My Duty is to Work as a Full Stack Developer. I learnt Django and React. I also make one Online Video Streaming Website Like Youtube in Django. But I am More Interested about React Library because of it's component Based Architecture and good flexibilty for UI Contents. This website is created in React.</p>
                     </div>
                 </div>
                 
                 <div className="timeline-box right ">
                     <div className="timeline-container">
                         <div className="timeline-logo">
-                            <img src="http://robodronics.in/wp-content/uploads/2022/02/robologo.png" />
+                            <img src={robologo} />
                         </div>
                         <h3 className="experience-designation  m0 m-blue"> Head R & D department of Drone</h3>
                         <h4 className="experience-company-name"> Robodronics </h4>

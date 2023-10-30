@@ -606,7 +606,15 @@ button:focus {
 }
 
 
-@media only screen and (max-width: 320px) and (orientation:landscape) {
+@media only screen and (max-width: 375px) {
+
+    #my-name {
+        font-size: 2rem;
+        letter-spacing: 0.1rem;
+        color: white;
+        font-weight: 700;
+        margin-top: -9rem;
+    }
     .timeline-box {
         width: 100%;
         left: 10% !important;
@@ -621,14 +629,14 @@ button:focus {
         left: 2%;
     }
 
-    #body-header {
-        /* height: 42vh; */
-        opacity: 0.8;
-        background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg);
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        padding-top: 1.2rem;
+    .mb75px {
+        margin-bottom: 25px;
+    }
+    .mb75px span{
+        margin-bottom: 25px;
+    }
+    .experience-designation{
+        margin-bottom: 25px;
     }
     #about {
         height: auto;
